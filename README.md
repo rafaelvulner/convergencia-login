@@ -114,4 +114,42 @@ Rodar a aplicação
   mvn spring-boot:run
 ```
 
+## Step by step
+
+- Importar a collections no postman
+- Rodar aplicação convergencia-login na porta 8080
+- Rodar aplicação convergencia-cpf na porta 8082
+
+Criar usuario para logar
+
+```bash
+  http://localhost:8080/save
+```
+
+Recuperar o Token
+
+```bash
+  http://localhost:8080/auth
+```
+
+Cadastrar CPF
+
+```bash
+ http://localhost:8080/cpf
+```
+
+Consultar CPF
+
+```bash
+ http://localhost:8080/cpf/33931722805
+```
+
+Alterar STATUS
+
+```bash
+ http://localhost:8080/cpf/status
+```
+
+
+
 
